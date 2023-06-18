@@ -2,7 +2,7 @@
 
 Curso de Angular: Componentes y Servicios - Platzi <br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
-Si quieres ver mi proyecto de práctica, está subido en una instancia de Firebase aquí: [Fundamentals Angular](https://yardstore-cafc1.web.app/)
+Si quieres ver mi proyecto de práctica, está subido en una instancia de Firebase aquí: [My Project](https://yardstore-cafc1.web.app/)
 
 ## Development server
 
