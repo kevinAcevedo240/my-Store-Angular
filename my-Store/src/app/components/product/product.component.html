@@ -1,7 +1,11 @@
 <div class="product">
   <app-img [img]="product.image"></app-img>
   <h3>{{product.title}}</h3>
-  <p>Precio: $ {{product.price | currency: 'COP'}}</p>
-  <p>{{product.description}}</p>
-  <button (click)="onAddToCart()">Add Cart</button>
+  <div class="row">
+    <p class="price">Precio: $ {{product.price | currency: 'COP'}}</p>
+    <!-- <p>{{product.description}}</p> -->
+    <button class="icon-button" (click)="onAddToCart()">
+      <img src="assets/svg/bt_add_to_cart.svg" alt="Image">
+    </button>
+  </div>
 </div>

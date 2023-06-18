@@ -13,6 +13,8 @@ import { ReversePipe } from './pipes/reverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
 import { VowelToNumberPipe } from './pipes/vowel-to-number.pipe';
 import { HighligthDirective } from './directives/highligth.directive';
+import { FooterComponent } from './components/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { HighligthDirective } from './directives/highligth.directive';
     ReversePipe,
     TimeAgoPipe,
     VowelToNumberPipe,
-    HighligthDirective
+    HighligthDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

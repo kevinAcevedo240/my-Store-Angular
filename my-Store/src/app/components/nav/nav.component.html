@@ -1,18 +1,21 @@
 <div class="show-mobile">
-  <div class="background-nav" [class.active]="showMenu">
+  <div >
     <button (click)="toggleMenu()">
       <img src="./assets/svg/icon_menu.svg" alt="menu">
     </button>
     <a href="">
       <img src="./assets/svg/logo_yard_sale.svg" alt="logo">
     </a>
-    <a href="">
-      <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
-    </a>
+    <div class="cart">
+      <a href="">
+        <img src="./assets/svg/icon_shopping_cart_notification.svg" alt="logo">
+      </a>
+      <span class="counter">{{counter}}</span>
+    </div>
   </div>
   <div class="side-menu"
     [class.active]="showMenu">
-    <button (click)="toggleMenu()"><h3>Close</h3></button>
+    <button (click)="toggleMenu()"><img src="./assets/svg/icons8-close.svg" alt="logo"></button>
     <ul>
       <li class="menu-item"><a href="">All</a></li>
       <li class="menu-item"><a href="">Clothes</a></li>
@@ -33,7 +36,7 @@
       </ul>
     </nav>
     <div class="info">
-      <div class="account"><h3>nicolas@nicolas.com</h3></div>
+      <div class="account"><h3>keju.acevedosa24@gmail.com</h3></div>
       <div class="cart">
         <a href="">
           <img src="./assets/svg/icon_shopping_cart_notification.svg" alt="logo">

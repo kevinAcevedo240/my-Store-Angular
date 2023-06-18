@@ -1,25 +1,45 @@
 
 
-.products--grid{
-  display: flex;
-  flex-direction: column;
-  div {
-    img{
-      width: 100%;
-      border-radius: 10px;
-    }
-    h2, p{
-      margin: 0;
-    }
-  }
+ .products--grid{
+   columns: 5 230px;
+
+ }
+
+ .app-product img {
+  width: 100%;
+  height: auto;
 }
 
+// .products--grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+//   grid-auto-rows: minmax(0, max-content); // Ajusta el alto automático de las filas
+//   grid-gap: 2rem;
+//   grid-auto-flow: dense; // Permite que los elementos se posicionen automáticamente en los espacios vacíos
+// }
+
+
+// .products--grid{
+//   columns: 5 230px;
+//   display: flex;
+//   flex-direction: column;
+//   div {
+//     img{
+//       width: 100%;
+//       border-radius: 10px;
+//     }
+//     h2, p{
+//       margin: 0;
+//     }
+//   }
+// }
+
 //Tablet
-@media screen and (min-width: 40em) {
-  .products--grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    grid-gap: 2rem;
-    margin: 1.5rem;
-  }
-}
+// @media screen and (min-width: 40em) {
+//   .products--grid{
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+//     grid-gap: 2rem;
+//     margin: 1.5rem;
+//   }
+// }
